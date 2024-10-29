@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style/style.css">
+  
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
  
   </head>
   <body>
   
   <header>
-    <div class="translate">
+    <div class="translate" id="translate">
         <a href="#" id="idioma" class="idioma">
             <img src="" alt="Icono bandera">
             <img src="banderas/abrir.png" alt="Icono bottom"> 
@@ -37,43 +38,246 @@
         </ul>
     </div>
     <h2 id="titulo">Migas Amigas - IDENTIFICACIÓN</h2>
-    <p>cambio de idioma</p>
     <div>
       
     </div>
   </header>
   <menu>
     <ul class="menusContenidos" id="menusContenidos">
-      <li class="menuContenido"><a href="#about"><span id="menuMapa">Mapa</span></a></li>
-      <li class="menuContenido"><a href="#contact"><span id="menuContacto">Contacto</span></a></li>
-      <li class="menuContenido"><a href="#contact"><span id="menuEmpanadas">Empanadas</span></a></li>
-      <li class="menuContenido"><a href="#news"><span id="menuPasteleriaBolleria">Pastelería-Bollería</span></a></li>
-      <li class="menuContenido"><a href="#home"><span id="menuPanaderia">Panadería</span></a></li>     
+      <li class="menuContenido"><a href="#empanadas"><span id="empanadas">Empanadas</span></a></li>
+      <li class="menuContenido"><a href="#pasteleria"><span id="pasteleriaBolleria">Pastelería-Bollería</span></a></li>
+      <li class="menuContenido"><a href="#panaderia"><span id="panaderia">Panadería</span></a></li>   
+      <li class="menuContenido"><a href="#inico"><span id="inicio">Inicio</span></a></li>  
     </ul><br>
     
   </menu>
   
   <section>
     <nav>
-      <h1>NAVEGACIÓN</h1>
+      <h1 style="color: rgb(104,57,0);" id="product">Productos disponibles</h1>
       <ul>
-        <li><a href="#">London</a></li>
-        <li><a href="#">Paris</a></li>
-        <li><a href="#">Tokyo</a></li>
-        <li><a href="#">Formulario - INTERACCIÓN</a></li>
+        <li><a href="#panes" id="productoPan">Panes</a></li>
+        <li><a href="#pasteles"id="productoPastel">Pasteles</a></li>
+        <li><a href="#empanada" id="productoEmpanada">Empanadas</a></li>
       </ul>
     </nav>
     
     <article>
-      <h4 class="migapan">Está usted en : MIGA DE PAN - miga de pagn - miga de pan</h4>
-      <h1>CONTENIDO</h1>
-      <div id="menuContenido"><span id="contenidoArticle"></span></div>
+      <h4 id="migapan">Migas - Amigas &nbsp;&nbsp;|&nbsp;&nbsp; Inicio</h4>
+      <div class="seccion">
+        <div class="table responsive-xl">
+          <table class="table" style="width: 100%;">
+            <thead>
+              <tr>
+                <th></th>
+                <th><h1 id="tituloseccion">SOBRE NOSOTROS</h1></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 50px; align-items: center;"><img id="imagenseccion" src="img/panaderia.png"></td>
+                <td id="textoseccion">
+                 
+                  <h1>Nuestra empresa</h1>
+                   <p><strong>Migas-Amigas</strong> es una empresa familiar que nació a principios de los años 80 en el pueblo de Azagra (Navarra), con el fin de servir pan tanto a particulares como a tiendas, bares, restaurantes y supermercados.</p> 
+                   <p>La Panadera ha sido siempre una empresa preocupada por satisfacer las necesidades de sus clientes, ofreciendo siempre la máxima calidad tanto en sus productos como en sus servicios.</p>
+                   <p>A lo largo de los años, La Panadera ha apostado por la innovación, desarrollando nuevos productos diferenciales tanto por su sabor, como por su funcionalidad. Como resultado de esa investigación, nace su producto estrella, Laxapan, el primer pan de fibra verde.</p>
+                   <p>Su misión es ser la empresa líder en el negocio de la panadería y repostería, superando las expectativas de los clientes, a través de un equipo comprometido.</p>
+                   <p>La Panadera adapta sus productos a las exigencias de sus clientes, es por ello que ofrecemos un especializado abanico de productos para el sector de la hostelería, modificando formas, pesos y tamaños de los productos en función de sus necesidades.</p>
+                   <p>Ofrecemos un servicio rápido y seguro para el transporte de nuestros productos al lugar que el cliente desee. Además de disponer de un servicio a domicilio, también comercializamos nuestros productos por el resto de provincias.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="elaboración">
+          <iframe width="1000" height="600" 
+            src="https://www.youtube.com/embed/7mDzVWQ3VPQ?si=4NAn7zt7CMYylIyA" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      </div>
+    </article>
+  </section>
+
+  
+  
+  <footer>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="img/natural.png">
+      </div>
+      <div class="grid-item">
+        <h3>Migas - Amigas</h3>
+        <p>Av. Santiago, 25</p>
+        <p>A Coruña - Galicia</p>
+        <p><a href="mailto:migaamiga@hotmail.com"><img src="img/correo.png" id="correo"></a></p>
+      </div>
+      <div class="grid-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.832608388244!2d-8.703714223835911!3d42.23615417120473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f628bcd77fa57%3A0xc3be57b243ed53ae!2sPanaderia%20A%20Miga!5e1!3m2!1ses!2ses!4v1730200530840!5m2!1ses!2ses" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="grid-item">
+        <h3>Horario</h3>
+        <p>Lunes a Domingo - De 9 a 15 horas</p>
+        <p>Tfl. 645 000 999 555</p>
+      </div>
+      <div class="grid-item">
+        <h3>Legal</h3>
+        <p><a href="#"><span>Privacidad</span></a></p>
+        <p><a href="#"><span>Cookies</span></a></p>
+        <p><a href="#"><span>Aviso Legal</span></a></p>
+      </div>   
+    </div>
+  </footer>
+
+  <section>
+    <nav>
+    </nav>
+    
+    <article>
+      <div id="separadorproductos"></div>
+      <div id="separadorproductoss"></div>
+      
+        <div class="productos">
+          <div id="panes" style="margin-top: 40px;">
+            <h1 style="text-align: center; color: rgb(104,57,0);padding-bottom: 40px;" id="productoDisponiblePan">Panes disponibles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-align: end;"><a href="#translate">Volver</a></span></h1>
+            <h3 ></h3>
+            <div class="table responsive-xl">
+              <table class="table" style="width: 100%; border-color: rgb(104,57,0);text-align: center;">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="img/productos/pan_1.png"><p><strong>Candeal</strong></p></td>
+                    <td><img src="img/productos/pan_2.png"><p><strong>Blanco</strong></td>
+                    <td><img src="img/productos/pan_3.png"><p><strong>Integral</strong></td>
+                    <td><img src="img/productos/pan_4.png"><p><strong>Centeno</strong></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/productos/pan_5.png"><p><strong>Focaccia</strong></td>
+                    <td><img src="img/productos/pan_6.png"><p><strong>Multicereales</strong></td>
+                    <td><img src="img/productos/pan_7.png"><p><strong>Baguette</strong></td>
+                    <td><img src="img/productos/pan_8.png"><p><strong>Chapata</strong></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/productos/pan_9.png"><p><strong>Pumpernickel Bread</strong></td>
+                    <td><img src="img/productos/pan_10.png"><p><strong>Challah</strong></td>
+                    <td><img src="img/productos/no_foto.png"><p><strong>Próximamente: Brioche</strong></td>
+                    <td><img src="img/productos/no_foto.png"><p><strong>Próximamente: Bagel</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <div id="separadorproductos"></div>
+          <div id="separadorproductoss"></div>
+        
+          <div id="pasteles">
+            <h1 style="text-align: center;color: rgb(104,57,0);padding-bottom: 40px;padding-bottom: 40px;" id="productoDisponiblePastel">Pastelería disponibles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-align: end;"><a href="#idiomas">Volver</a></span></h1>
+            <h3 ></h3>
+            <div class="table responsive-xl">
+              <table class="table" style="width: 100%; border-color: rgb(104,57,0);text-align: center;">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="img/productos/bollo_1.png"><p><strong>Biscuit</strong></p></td>
+                    <td><img src="img/productos/bollo_2.png"><p><strong>Soletas</strong></td>
+                    <td><img src="img/productos/bollo_3.png"><p><strong>Genovesa</strong></td>
+                    <td><img src="img/productos/bollo_4.png"><p><strong>Pound Cake</strong></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/productos/bollo_5.png"><p><strong>Dacquoise</strong></td>
+                    <td><img src="img/productos/bollo_6.png"><p><strong>Pasteil Nata</strong></td>
+                    <td><img src="img/productos/bollo_7.png"><p><strong>Angel Food</strong></td>
+                    <td><img src="img/productos/bollo_8.png"><p><strong>Chiffon</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="separadorproductos"></div>
+          <div id="separadorproductoss"></div>
+        
+          <div id="empanada">
+            <h1 style="text-align: center;color: rgb(104,57,0);padding-bottom: 50px;padding-bottom: 40px;" id="productoDisponibleEmpanada">Empanadas disponibles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-align: end;"><a href="#idiomas">Volver</a></span></h1>
+            <h3 ></h3>
+            <div class="table responsive-xl">
+              <table class="table" style="width: 100%; border-color: rgb(104,57,0);text-align: center;">
+                <thead>
+                  <tr>
+                    <th colspan=""></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="img/productos/empanada_1.png"><p><strong>Gallega</strong></p></td>
+                    <td><img src="img/productos/empanada_2.png"><p><strong>Portugal</strong></td>
+                    <td><img src="img/productos/empanada_3.png"><p><strong>Meat Pies</strong></td>
+                    <td><img src="img/productos/empanada_4.png"><p><strong>Zamora</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      </div>
+      <h1 id="separadorproductos"></h1>
+
+      
     </article>
   </section>
   
+
+
+
   <footer>
-    <p>Footer</p>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="img/natural.png">
+      </div>
+      <div class="grid-item">
+        <h3>Migas - Amigas</h3>
+        <p>Av. Santiago, 25</p>
+        <p>A Coruña - Galicia</p>
+        <p><a href="mailto:migaamiga@hotmail.com"><img src="img/correo.png" id="correo"></a></p>
+      </div>
+      <div class="grid-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.832608388244!2d-8.703714223835911!3d42.23615417120473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f628bcd77fa57%3A0xc3be57b243ed53ae!2sPanaderia%20A%20Miga!5e1!3m2!1ses!2ses!4v1730200530840!5m2!1ses!2ses" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="grid-item">
+        <h3>Horario</h3>
+        <p>Lunes a Domingo - De 9 a 15 horas</p>
+        <p>Tfl. 645 000 999 555</p>
+      </div>
+      <div class="grid-item">
+        <h3>Legal</h3>
+        <p><a href="#"><span>Privacidad</span></a></p>
+        <p><a href="#"><span>Cookies</span></a></p>
+        <p><a href="#"><span>Aviso Legal</span></a></p>
+      </div>   
+    </div>
   </footer>
+
   
   <script src="js/script.js"></script>
   <script src="js/scriptTraductor.js"></script>
