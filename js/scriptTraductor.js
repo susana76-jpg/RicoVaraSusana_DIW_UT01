@@ -68,6 +68,19 @@ opcionesArray.forEach((opcion)=>{
     });
 });
 
+//---------------------ACCESIBILIDAD-------------------------------------
+
+function readContent(id, language) {
+    //const title = document.getElementById('title').innerText;
+    const content = document.getElementById(id).innerText;
+    const speech = new SpeechSynthesisUtterance(`${content}`);
+    speech.lang = 'es-ES';
+    //speech.lang = language;
+    window.speechSynthesis.speak(speech);
+}
+
+
+
 //----------------------ELECCIÓN DEL IDIOMA------------------------------
 
 function traducir(idioma,seccion){
